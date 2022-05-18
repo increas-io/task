@@ -114,11 +114,6 @@ export default function Task() {
           </small>
         </div>
       </div>
-      <StaticImage
-        className="p-0 m-0"
-        src="../images/Task.svg"
-        alt="Task Image"
-      />
     </>
   )
 }
