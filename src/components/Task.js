@@ -106,7 +106,7 @@ export default function Task() {
           <h1 className="font-extrabold text-8xl leading-none">
             {copy.taskHeader}
           </h1>
-          <p className="mt-12 w-1/2 text-3xl font-medium text-gray-300">
+          <p className="mt-12 w-1/2 text-3xl font-medium text-gray-300 task__content">
             {copy.taskContent}
           </p>
           <small className="mt-16 text-xl text-gray-300">
