@@ -1,13 +1,27 @@
-.task {
-    display: flex;
-        align-items: center;
-        justify-items: center;
-        height: 90vh;
-        z-index: 1;
-        width: 100%;
+$gradient-size: 60vh;
 
-    img {
-        width: 100%;
-        height: 100%;
-    }
+.task {
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  height: 90vh;
+  z-index: 1;
+  width: 100%;
+}
+
+.gradient-one {
+  border-radius: 50%;
+  height: $gradient-size;
+  width: $gradient-size;
+  background: rgb(242,76,153);
+  background: linear-gradient(180deg, rgba(242,76,153,1) 0%, rgba(241,84,122,1) 44%, rgba(255,131,137,1) 64%, rgba(249,132,127,1) 100%);
+}
+
+.gradient-two {
+  border-radius: 40%;
+  height: 30vh;
+  width: 70vh;
+  background: rgb(249,132,127);
+  background: linear-gradient(196deg, rgba(249,132,127,1) 16%, rgba(252,181,153,1) 39%, rgba(253,223,190,1) 98%);
+  transform: translateY(-120px) translateX(-90px);
 }
