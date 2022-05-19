@@ -1,13 +1,26 @@
 import React from 'react'
-import { StaticImage } from 'gatsby-plugin-image'
 import "./style.scss"
 
 export default function Task() {
     return (
-        <>
-          <div className="task p-0 m-0">
-              <StaticImage className="p-0 m-0" src="../images/Task.svg" alt="Task Image" />
-          </div>  
-        </>
+        <div className="task">
+          <div className="task__content">
+            <h1 className="task__content--h1">
+                Create this component
+            </h1>
+            <p className="task__content--text">
+              Use component &#8249;Task&#8250; to create layout
+              and style.scss to write your css, additionaly you
+              can use Tailwind.CSS.
+            </p>
+            <p className="task__content--text">
+              increas.io
+            </p>
+          </div>
+          <div className="task__blur">
+            <div className="task__blur--content">
+            </div>          
+          </div>
+        </div>
     )
 }
