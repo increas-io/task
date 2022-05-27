@@ -1,13 +1,50 @@
 .task {
+//   position: relative;
     display: flex;
-        align-items: center;
-        justify-items: center;
-        height: 90vh;
-        z-index: 1;
-        width: 100%;
+    align-items: center;
+    justify-items: center;
+    height: 90vh;
+    z-index: 1;
+    width: 100%;
+    margin-top: 80px;
 
-    img {
-        width: 100%;
-        height: 100%;
-    }
+  .title {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 800;
+  }
+
+  .pink-round {
+    z-index: 2;
+    top: 50px;
+    right: 50px;
+    width: 40%;
+    height: 60%;
+    filter: blur(80px);
+    background-image: radial-gradient(
+      farthest-corner at 50% 0,
+      #ea277f,
+      #f55d6c,
+      #f09b7f,
+      #fccfaa,
+    );
+  }
+
+  .yellow-round {
+    z-index: 1;
+    top: 250px;
+    right: 250px;
+    width: 40%;
+    height: 60%;
+    filter: blur(90px);
+    background-image: radial-gradient(
+      farthest-corner at 50% 0,
+      #f29879,
+      #ffd7b7,
+      #ffdfc2
+    );
+  }
+
+  .descr {
+    color: #807a72;
+  }
 }
