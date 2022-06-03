@@ -1,50 +1,61 @@
 .task {
-//   position: relative;
     display: flex;
-    align-items: center;
-    justify-items: center;
     height: 90vh;
-    z-index: 1;
-    width: 100%;
-    margin-top: 80px;
 
   .title {
     font-family: "Montserrat", sans-serif;
-    font-weight: 800;
+    font-size: 90px;
+    line-height: 100%;
+    @media screen and ( max-width: 1920px ) {
+        font-size: calc( 35px + (90 - 35) * ((100vw - 320px) / (1440 - 320)))
+    }
   }
 
   .pink-round {
-    z-index: 2;
-    top: 50px;
-    right: 50px;
-    width: 40%;
-    height: 60%;
+    filter: blur(70px);
+    background: rgb(248,164,140);
+    background: linear-gradient(0deg, rgba(248,164,140,1) 20%, rgba(242,18,118,1) 100%);
+  }
+
+  .img {
+    mix-blend-mode: color-burn;
+    filter: blur(1.5px);
+    position: absolute !important;
+  }
+
+  .rose-round {
     filter: blur(80px);
-    background-image: radial-gradient(
-      farthest-corner at 50% 0,
-      #ea277f,
-      #f55d6c,
-      #f09b7f,
-      #fccfaa,
-    );
+    background: rgb(254,113,182);
+    background: radial-gradient(circle, rgba(254,113,182,1) 0%, rgba(249,171,184,1) 100%);
   }
 
   .yellow-round {
-    z-index: 1;
-    top: 250px;
-    right: 250px;
-    width: 40%;
-    height: 60%;
-    filter: blur(90px);
-    background-image: radial-gradient(
-      farthest-corner at 50% 0,
-      #f29879,
-      #ffd7b7,
-      #ffdfc2
-    );
+    filter: blur(80px);
+    width: 35%;
+    background: rgb(255,219,187);
+    background: linear-gradient(0deg, rgba(255,219,187,1) 20%, rgba(255,173,157,1) 100%);
   }
 
   .descr {
     color: #807a72;
+    width: 45%;
+    font-size: 25px;
+    line-height: 100%;
+    @media screen and ( max-width: 1920px ) {
+        font-size: calc( 16px + (25 - 16) * ((100vw - 320px) / (1440 - 320)))
+    }
+    @media (max-width: 1199.98px) {
+        width: 100%;
+    }
+  }
+ 
+  .descr-bottom {
+    color: #807a72;
+    width: 45%;
+    font-size: 18px;
+    line-height: 100%;
+    @media screen and ( max-width: 1920px ) {
+        font-size: calc( 12px + (18 - 12) * ((100vw - 320px) / (1440 - 320)))
+    }
   }
 }
